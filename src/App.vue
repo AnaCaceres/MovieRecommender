@@ -2,16 +2,29 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Movie Recommender App"/>
+    {{ movies }}
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import imbdAPI from "@/logic/imdb";
 
 export default {
   name: 'App',
   components: {
     HelloWorld
+  },
+  data: () => ({
+    movies: []
+  }),
+  mounted() {
+    this.getMovies();
+  },
+  methods: {
+    async getMovies() {
+      this.movies = await imbdAPI.getMoviesList();
+    }
   }
 }
 </script>
