@@ -1,5 +1,9 @@
 # movierecommender
 
+## Project description
+```
+This project shows the most popular films and their information taken from IMDB API.
+```
 ## Project setup
 ```
 npm install
