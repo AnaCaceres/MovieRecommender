@@ -74,6 +74,7 @@ export default {
   margin: 2em;
 }
 .button {
+  cursor: pointer;
   display:inline-block;
   padding: 0.35em 1.2em;
   border: 0.1em solid #2D3231;
