@@ -1,4 +1,4 @@
-const apiKey = 'k_90pj1jw0';
+const apiKey = 'pk_9gy4e8nkvj1op625v';
 
 export default {
   getMoviesList() {
